@@ -1,0 +1,24 @@
+PODS:
+  - Alamofire (5.4.1)
+  - SVProgressHUD (2.2.5)
+  - Swinject (2.7.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.2)
+  - SVProgressHUD
+  - Swinject (~> 2.7.1)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - SVProgressHUD
+    - Swinject
+
+SPEC CHECKSUMS:
+  Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  Swinject: ddf78b8486dd9b71a667b852cad919ab4484478e
+
+PODFILE CHECKSUM: acc7ae4812184bc563c32b40181cef97dc6ad10c
+
+COCOAPODS: 1.10.1

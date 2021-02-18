@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="55" id="oqs-de-g3W" customClass="ExpenseCategoryCell" customModule="Expense" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="55"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oqs-de-g3W" id="DOm-Me-rgW">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="55"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="usf-iV-Upj">
+                        <rect key="frame" x="356" y="16" width="42" height="23"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wus-g2-hoJ">
+                        <rect key="frame" x="16" y="16" width="100" height="23"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="OBp-ar-dJH"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                        <connections>
+                            <action selector="typeTextFieldDidEndEditing:" destination="oqs-de-g3W" eventType="editingDidEnd" id="DE6-u2-3N4"/>
+                            <action selector="typeTextFieldDidReturn:" destination="oqs-de-g3W" eventType="primaryActionTriggered" id="zj6-9T-2F9"/>
+                        </connections>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Wus-g2-hoJ" firstAttribute="top" secondItem="DOm-Me-rgW" secondAttribute="top" constant="16" id="AMj-7c-fwW"/>
+                    <constraint firstItem="Wus-g2-hoJ" firstAttribute="leading" secondItem="DOm-Me-rgW" secondAttribute="leading" constant="16" id="NLk-4D-4ZY"/>
+                    <constraint firstItem="usf-iV-Upj" firstAttribute="top" secondItem="DOm-Me-rgW" secondAttribute="top" constant="16" id="ecZ-fM-j81"/>
+                    <constraint firstAttribute="bottom" secondItem="Wus-g2-hoJ" secondAttribute="bottom" constant="16" id="pr3-y9-TqA"/>
+                    <constraint firstAttribute="bottom" secondItem="usf-iV-Upj" secondAttribute="bottom" constant="16" id="r9C-aA-3s5"/>
+                    <constraint firstAttribute="trailing" secondItem="usf-iV-Upj" secondAttribute="trailing" constant="16" id="rV8-ec-Ip8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="amountLabel" destination="usf-iV-Upj" id="eS1-cs-R5S"/>
+                <outlet property="typeTextField" destination="Wus-g2-hoJ" id="fkZ-Tz-X8D"/>
+            </connections>
+            <point key="canvasLocation" x="28.985507246376812" y="-34.486607142857139"/>
+        </tableViewCell>
+    </objects>
+</document>
